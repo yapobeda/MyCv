@@ -1,50 +1,131 @@
-main{
-    width: 100%;
-    display: flex;
-}
- /* ZONE DE GAUCHE */
- .left{
-    background-color: orangered;
-    height: 50vh;
-    width: 25%;
-    color: white;
-    margin-right: 3%;
-}
-img{ 
-    border-radius: 50%;
-    padding-top: 10px;
-}
-.profinfo{
-    text-align: center;
-}
-.fonct{
-    font-size: 0.7em;
-    color: rgb(148, 31, 54);
-}
-.atout{
-    text-align: center;
-    color: white;
-    border: 2px solid rgb(148, 31, 54);
-}
-ul li{
-    list-style-type: none;
-}
-.an{
-    color: rgb(51, 24, 29);
-    font-size: .8em;
+/*POUR ECRANS INF A 600PX*/
+@media screen and (max-width: 600px){
+    main{
+        display: block;
+    }
+    /* ZONE DE GAUCHE */
+    .left{
+        background-color: cornflowerblue;
+        color: white;
+    }
+    img{ 
+        border-radius: 50%;
+        padding-top: 10px;
+    }
+    .profinfo{
+        text-align: center;
+    }
+    .fonct{
+        font-size: 0.7em;
+        color: rgb(148, 31, 54);
+    }
+    .atout{
+        text-align: center;
+        color: white;
+        border: 2px solid rgb(148, 31, 54);
+    }
+    ul li{
+        list-style-type: none;
+    }
+    .an{
+        color: rgb(51, 24, 29);
+        font-size: .8em;
+    }
+    /* ZONE DE DROITE */
+    .but{
+        color: orchid;
+    }
+    .but + .ci li{
+        display: inline;
+        padding: 15px;
+    }
 }
 
-/* ZONE DE DROITE */
-.left{
-    width: 50%;
-    margin-right: 3%;
-    height:130vh;
-    border-radius: 10px;
+/*POUR ECRANS SUP A 640 PX*/
+@media screen and (min-width: 640px){
+    main{
+        display: flex;
+        
+    }
+    /* ZONE DE GAUCHE */
+    .left{
+        background-color: orangered;
+        color: white;
+        padding-right:20px;
+        padding-left: 20px;
+        margin-right: 20vh;
+    }
+    img{ 
+        border-radius: 50%;
+        padding-top: 10px;
+    }
+    .profinfo{
+        text-align: center;
+    }
+    .fonct{
+        font-size: 0.7em;
+        color: rgb(148, 31, 54);
+    }
+    .atout{
+        text-align: center;
+        color: white;
+        border: 2px solid rgb(148, 31, 54);
+    }
+    ul li{
+        list-style-type: none;
+    }
+    .an{
+        color: rgb(51, 24, 29);
+        font-size: .8em;
+    }
+    /* ZONE DE DROITE */
+    .but{
+        color: orchid;
+    }
+    .but + .ci li{
+        display: inline;
+        padding: 15px;
+    }
 }
-.but{
-    color: orchid;
-}
-.but + .ci li{
-    display: inline;
-    padding: 15px;
+/*  */
+@media screen  and (max-width: 640px) and (min-width: 600px){
+    main{
+        display: block;
+    }
+    /* ZONE DE GAUCHE */
+    .left{
+        background-color: green;
+        color: white;
+    }
+    img{ 
+        border-radius: 50%;
+        padding-top: 10px;
+    }
+    .profinfo{
+        text-align: center;
+    }
+    .fonct{
+        font-size: 0.7em;
+        color: rgb(148, 31, 54);
+    }
+    .atout{
+        text-align: center;
+        color: white;
+        border: 2px solid rgb(148, 31, 54);
+    }
+    ul li{
+        list-style-type: none;
+    }
+    .an{
+        color: rgb(51, 24, 29);
+        font-size: .8em;
+    }
+    /* ZONE DE DROITE */
+    .but{
+        color: orchid;
+    }
+    .but + .ci li{
+        display: inline;
+        padding: 15px;
+    }
 }
